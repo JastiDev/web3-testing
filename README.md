@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# challenge
+## welcome
+Feel free to use the languages, libraries, frameworks you are most familiar with, if possible Typescript, React, & Node.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## part 1 - intro challenge: web3 login
+Create a basic web app that allows a user to login via metamask, send fake Ethereum (on the rinkeby test net), and load their previous transactions.
+1. Allow user to login via [metamask chrome extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) or [wallet connect](https://walletconnect.com/).
+2. Get some fake Eth from the [faucet](https://faucets.chain.link/rinkeby), switch your metamask to the rinkeby testnet
+3. Create simple UI with a login button (opens up metamask login modal), displays user's current balance on the rinkeby testnet, allows user to send funds to another Ethereum address, displays user's previous transaction hashes in a table (linking each transaction hash to its respective etherscan link).
 
-## Available Scripts
+## part 2 - followup challenge: multi-sig creation
+1. Allow user to setup a gnosis multi-sig wallet with an arbitrary number of approvers and a confirmation threshold ([gnosis](https://help.gnosis-safe.io/en/articles/3876461-create-a-safe)).
+3. Create simple UI showing approvers, allowing user to edit the nickname for different addresses, changing approvers, as well as changing the confirmation threshold.
+4. For testing of multi-sig wallet creation, get some fake eth from the [faucet](https://faucets.chain.link/rinkeby), switch your metamask to the rinkeby testnet, test by initiating transactions,
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## resources
+- [ethers.js - ethereum library](https://docs.ethers.io/v5/)
+- [web3.js - ethereum library](https://web3js.readthedocs.io/en/v1.7.3/glossary.html)
+- [metamask docs](https://docs.metamask.io/guide/create-dapp.html#basic-action-part-1)
+- [sign-in with ethereum](https://docs.login.xyz/integrations/nextauth.js)
+- [etherscan api](https://etherscan.io/apis)
+- [bnc-onboard - wallet connections](https://www.npmjs.com/package/bnc-onboard)
+- [gnosis sdk - multi-sig wallets](https://github.com/gnosis/safe-apps-sdk)
+- [gnosis dao - discord help/resources](https://discord.com/invite/M39dTHQ)
+- [safe community - discord help/resources](https://discord.gg/junactJf)
